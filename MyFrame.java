@@ -4,7 +4,7 @@ public class MyFrame extends JFrame
 {
     private static final int HEIGHT = 400;
     private static final int WIDTH = 300;
-    private MyPanel panel;
+    private static MyPanel panel;
     
     public MyFrame(String title)
     {
@@ -15,10 +15,17 @@ public class MyFrame extends JFrame
         setVisible(true);
     }
     
+    public void paintLine()
+    {
+        panel = new LineDemoPanel();
+        add(panel);
+        setVisible(true);
+    }
+    
     public static void main(String[] args)
     {
-        
         MyFrame frame = new MyFrame("Hello");
+        frame.paintLine();
     }
 
 }

@@ -1,5 +1,5 @@
 import javax.swing.JPanel;
-import javax.awt.Graphics;
+import java.awt.Graphics;
 
 public class MyPanel extends JPanel
 {
